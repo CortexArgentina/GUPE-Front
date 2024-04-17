@@ -16,12 +16,9 @@ body {
 
 header {
     width: 95%;
-    height: 5EM;
-    padding: 20px;
+    height: 20%;
+    padding: 1%;
     display: flex;    
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
     border-bottom: 1px solid #D88C9A;
     border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
@@ -31,38 +28,46 @@ header {
 }
 
 .logo  {
-    border-radius: 10px;
     width: 10%; 
     height: auto; 
     align-content: center;
+
+
 }
 .logo img{
-    width: 110%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     border-radius: 20px;
     box-shadow: 2px 1px 10px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 .profile{
     width: 10%;
-    
-    
+    height: auto;
+    align-content: center;
 }
 .profile img {
     border-radius: 50%;
-   width: 100%;
-    height: auto; 
+    max-width: 100%;
+    max-height: 100%;
     box-shadow: 2px 1px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .container {
-    width:auto;
-    justify-content: center;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
    
    
 }
 
 .container ul {
     display: flex;
+    margin: 0;
+    padding: 0;
     justify-content: center; 
     align-items: center;
     font-size: 2vw;   
@@ -79,6 +84,7 @@ header {
     cursor: pointer;
     color: #F8F8F8;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+    margin-right: 10%;
 }
 
 .container ul li:last-child {
@@ -97,7 +103,7 @@ header {
 
 .container ul li:nth-child(1):after {
     background: #8E7DBE;
-    clip-path: polygon(6% 10%, 100% 0, 64% 65%, 28% 65%);
+    clip-path: polygon(6% 10%, 100% 0, 64% 65%, 28% 100%);
 }
 
 .container ul li:nth-child(2):after {
@@ -107,7 +113,7 @@ header {
 
 .container ul li:nth-child(3):after {
     background: #F2D0A9;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 57%);
+    clip-path: polygon(10% 0%, 100% 0%, 70% 99%, 0% 57%);
 }
 
 .container ul li:nth-child(4):after {
@@ -121,7 +127,7 @@ header {
 
 @keyframes boink {
     80% {
-        transform: scaleX(1.9) scaleY(0.6) translateX(-30%);
+        transform: scaleX(1.5) scaleY(1.6) translateX(-30%);
     }
 }
 
